@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Web App</h1>
+        <div id="emailList"></div>
+        
+        <button onclick="showComposeEmail()">Compose Email</button>
+        
+        <div id="composeEmailForm" style="display: none;">
+            <input type="text" id="emailSubject" placeholder="Subject" required>
+            <textarea id="emailBody" placeholder="Body" required></textarea>
+            <button onclick="sendEmail()">Send Email</button>
+            <button onclick="hideComposeEmail()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

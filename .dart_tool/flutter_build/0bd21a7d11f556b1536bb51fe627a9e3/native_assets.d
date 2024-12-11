@@ -1,0 +1,1 @@
+ C:\\Users\\daitu\\OneDrive\\Documents\\email_app\\.dart_tool\\flutter_build\\0bd21a7d11f556b1536bb51fe627a9e3\\native_assets.yaml: 

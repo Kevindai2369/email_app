@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://email-v2-b3b04-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">353003953608</string>
+    <string name="google_api_key" translatable="false">AIzaSyDclNcPxDyMH1KQhmTSUV1XaTcPh9mV5PY</string>
+    <string name="google_app_id" translatable="false">1:353003953608:android:ccd593f0b2c63206ec34fd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDclNcPxDyMH1KQhmTSUV1XaTcPh9mV5PY</string>
+    <string name="google_storage_bucket" translatable="false">email-v2-b3b04.firebasestorage.app</string>
+    <string name="project_id" translatable="false">email-v2-b3b04</string>
+</resources>

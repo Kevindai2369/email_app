@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "353003953608",
+    "firebase_url": "https://email-v2-b3b04-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "email-v2-b3b04",
+    "storage_bucket": "email-v2-b3b04.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353003953608:android:ccd593f0b2c63206ec34fd",
+        "android_client_info": {
+          "package_name": "com.example.email_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDclNcPxDyMH1KQhmTSUV1XaTcPh9mV5PY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        google()  // Required for Firebase dependencies
+        mavenCentral()  // Required for other dependencies
+    }
+    dependencies {
+        // Add the Google Services plugin for Firebase with a specific version
+        classpath 'com.google.gms:google-services:4.4.2'  // The latest stable version
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // Google's Maven repository
+        mavenCentral()  // Maven Central repository for other dependencies
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

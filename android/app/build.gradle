@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services'  // Apply the plugin here, no version needed
+}
+
+android {
+    namespace = "com.example.email_app"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.email_app"
+        minSdk = 25
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug // Replace with your signing config for release
+        }
+    }
+}
+
+dependencies {
+    // Import Firebase BoM to manage versions
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+
+    // Firebase products
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database' // For Realtime Database
+
+    // Add other dependencies here
+}
+
+apply plugin: 'com.google.gms.google-services'  // Apply Firebase plugin at the end
+
+
